@@ -99,3 +99,16 @@ case "snow":
 default:
     print("Enjoy Your Day")
 }
+
+//Range Operators
+let score_ = 67.6
+
+switch score_ {
+case 0..<50:
+    print("Failed")
+case 50..<85:
+    print("Satisfactory")
+default:
+    print("Great!")
+}
+
