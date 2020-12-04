@@ -86,7 +86,7 @@ else
 }
 
 //switch statements
-let weather = "sunny"
+let weather = "snow"
 
 switch weather {
 case "rain":
@@ -95,7 +95,7 @@ case "sunny":
     print("Wear Sunscreen")
 case "snow":
     print("Wrap up warm")
+    fallthrough
 default:
     print("Enjoy Your Day")
 }
-
