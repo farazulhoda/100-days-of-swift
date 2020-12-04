@@ -85,4 +85,17 @@ else
     print("Cards are different")
 }
 
+//switch statements
+let weather = "sunny"
+
+switch weather {
+case "rain":
+    print("Bring an umbrella")
+case "sunny":
+    print("Wear Sunscreen")
+case "snow":
+    print("Wrap up warm")
+default:
+    print("Enjoy Your Day")
+}
 
