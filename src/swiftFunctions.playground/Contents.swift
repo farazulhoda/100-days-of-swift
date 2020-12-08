@@ -30,3 +30,16 @@ func sq(num: Int) -> Int {
 }
 let rslt = sq(num: 2)
 print(rslt)
+
+//parameter labels
+func squaree(numberr: Int) -> Int {
+    return numberr * numberr
+}
+let result = squaree(numberr: 8)                           // For Integer
+
+//for string
+func sayHello(to name: String) {
+    print("Hello, \(name)!")
+}
+ sayHello(to: "Mr Robot")
+
