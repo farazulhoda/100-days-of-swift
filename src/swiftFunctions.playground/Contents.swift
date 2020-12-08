@@ -43,3 +43,8 @@ func sayHello(to name: String) {
 }
  sayHello(to: "Mr Robot")
 
+//omitting parameters labels
+func greet(_ person: String) {
+    print("Hello, \(person)!")
+}
+greet("Swift")
