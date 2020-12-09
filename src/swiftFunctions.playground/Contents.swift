@@ -57,4 +57,5 @@ func greet(_ person: String, nicely: Bool = true)   {
     print("oh no, it's \(person) again!")
 }
 }
-
+greet("Mr robot")
+greet("Mr Robot", nicely: false)
