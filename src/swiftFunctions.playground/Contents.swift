@@ -70,3 +70,23 @@ func square(numbers: Int...)   {
 }
 
 square(numbers: 1, 2, 3, 4)
+
+//writing throwning functions
+enum PasswordError: Error   {
+    case obvious
+}
+func checkPassword(_ password: String) throws -> Bool {
+    if password == "password" {
+        throw PasswordError.obvious
+    }
+    
+    return true
+}
+//running throwing functions
+do  {
+    try checkPassword("Helloworld@666")
+    print("That password is good!")
+}   catch   {
+    print("You can't use that password")
+}
+
