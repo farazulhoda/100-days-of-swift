@@ -59,3 +59,14 @@ func greet(_ person: String, nicely: Bool = true)   {
 }
 greet("Mr robot")
 greet("Mr Robot", nicely: false)
+
+//Variadic functions
+print("haters","gonna","hate")
+
+func square(numbers: Int...)   {
+    for number in numbers {
+        print("\(number) squared is \(number * number)")
+    }
+}
+
+square(numbers: 1, 2, 3, 4)
