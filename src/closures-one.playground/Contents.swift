@@ -35,3 +35,12 @@ func travel(action: () -> Void) {
 }
 travel(action: drivin)
 
+//trailing closure syntax
+func traval(action: () -> Void) {
+print("I'm getting ready to go.")
+action()
+print("I arrived")
+}
+traval {
+    print("I'm Driving car")
+}
