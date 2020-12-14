@@ -44,3 +44,14 @@ print("I arrived")
 traval {
     print("I'm Driving car")
 }
+
+//closure with parameters
+func trvl(action: (String) -> Void) {
+    print("I'm getting ready to go")
+    action("London")
+    print("I arrived!")
+}
+
+trvl { (place: String) in
+    print("I'm going to \(place) in my car")
+}
