@@ -55,3 +55,15 @@ func trvl(action: (String) -> Void) {
 trvl { (place: String) in
     print("I'm going to \(place) in my car")
 }
+
+//closure with return values
+func roam(action: (String) -> String)   {
+    print("I'm getting ready to go.")
+    let description = action("Chennai")
+    print(description)
+    print("I Arrived")
+}
+
+roam {  (place: String) -> String in
+    return "I'm going to \(place) in my car"
+}
