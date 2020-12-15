@@ -1,0 +1,26 @@
+{
+  "name": "100-days-of-swift",
+  "version": "1.0.0",
+  "description": "Swift programming on SwiftUI and on various modules of swiftUI, ",
+  "main": "/src",
+  "scripts": {
+    "test": "Run Xcode playground"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farazul/100-days-of-swift.git"
+  },
+  "keywords": [
+    "swift",
+    "swiftUI",
+    "100DaysOfCode",
+    "Xcode",
+    "Playground"
+  ],
+  "author": "Farazul Hoda (Github: @farazul)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farazul/100-days-of-swift/issues"
+  },
+  "homepage": "https://github.com/farazul/100-days-of-swift#readme"
+}
