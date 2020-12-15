@@ -67,3 +67,7 @@ func roam(action: (String) -> String)   {
 roam {  (place: String) -> String in
     return "I'm going to \(place) in my car"
 }
+
+
+//Shorthand Parameters Name
+
