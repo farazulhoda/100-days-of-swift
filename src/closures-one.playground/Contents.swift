@@ -70,4 +70,25 @@ roam {  (place: String) -> String in
 
 
 //Shorthand Parameters Name
-
+func tvl(action: (String) -> String)    {
+    print("I'm getting ready to go.")
+        let description = action("London")
+        print(description)
+        print("I arrived!")
+    
+}
+tvl { (place: String) -> String in
+    return "I'm going to \(place) in my car"
+}
+tvl { place -> String in
+    return "I'm going to \(place) in my car"
+}
+tvl { place in
+    return "I'm going to \(place) in my car"
+}
+tvl { place in
+    "I'm going to \(place) in my car"
+}
+tvl {
+    "I'm going to \($0) in my car"
+}
