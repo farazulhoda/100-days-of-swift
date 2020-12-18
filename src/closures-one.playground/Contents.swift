@@ -72,7 +72,7 @@ roam {  (place: String) -> String in
 //Shorthand Parameters Name
 func tvl(action: (String) -> String)    {
     print("I'm getting ready to go.")
-        let description = action("London")
+        let description = action("Venice")
         print(description)
         print("I arrived!")
     
@@ -90,5 +90,6 @@ tvl { place in
     "I'm going to \(place) in my car"
 }
 tvl {
-    "I'm going to \($0) in my car"
+    "I'm going to \($0) in my car" //dollar sign defines that a number starts counting                              from 0
 }
+
