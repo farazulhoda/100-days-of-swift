@@ -93,3 +93,14 @@ tvl {
     "I'm going to \($0) in my car" //dollar sign defines that a number starts counting                              from 0
 }
 
+//closure with multiple parameters
+func traveL(action: (String, Int) -> String)    {
+    print("Getting ready to go ...")
+    let descrip = action("New Delhi", 60)
+    print(descrip)
+    print("I arrived!")
+}
+
+traveL {
+    "I'm going to \($0) @ \($1) Km/hr."
+}
