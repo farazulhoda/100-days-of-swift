@@ -104,3 +104,13 @@ func traveL(action: (String, Int) -> String)    {
 traveL {
     "I'm going to \($0) @ \($1) Km/hr."
 }
+
+//Returning closures
+func depart()   ->  (String)    ->     Void {
+    return  {
+        print("I'm going to \($0)")
+    }
+}
+let result = depart()
+result("Mars")
+
