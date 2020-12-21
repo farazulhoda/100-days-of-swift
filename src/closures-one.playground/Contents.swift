@@ -114,3 +114,12 @@ func depart()   ->  (String)    ->     Void {
 let result = depart()
 result("Mars")
 
+//capturing values
+func travelRound() -> (String) -> Void {
+    return  {
+        print("I' going to \($0)")
+    }
+}
+
+let result0 = travelRound()
+result0("Mars")
