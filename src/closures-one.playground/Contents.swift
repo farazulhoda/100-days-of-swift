@@ -123,3 +123,17 @@ func travelRound() -> (String) -> Void {
 
 let result0 = travelRound()
 result0("Mars")
+
+//closuring capture
+func TravelRound() -> (String) -> Void  {
+    var counter = 1
+    
+    return  {
+        print("\(counter). I'm Going to \($0)")
+        counter += 1
+    }
+}
+
+result("London")
+result("London")
+result("London") //multiple times, th counter wil go up and up
