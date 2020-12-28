@@ -28,3 +28,24 @@ var isOlympicSport: Bool
 
 let chessBoxing = Sports(game: "Boxing", isOlympicSport: false)
 print(chessBoxing.olympicStatus)
+
+//Property Observers : Property observers let you run code before or after any property changes
+struct Progress {
+    var task: String
+    var amt: Int
+}
+
+var progress = Progress(task: "Loading data ...", amt: 0)
+progress.amt    =   30
+progress.amt    =   80
+progress.amt    =   100
+
+struct Progres {
+    var tasks: String
+    var amts: Int   {
+        didSet {
+            print("\(tasks) is now \(amts)% complete")
+        }
+    }
+}
+
