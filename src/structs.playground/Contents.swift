@@ -39,13 +39,23 @@ var progress = Progress(task: "Loading data ...", amt: 0)
 progress.amt    =   30
 progress.amt    =   80
 progress.amt    =   100
-
 struct Progres {
     var tasks: String
     var amts: Int   {
-        didSet {
+        didSet  {
             print("\(tasks) is now \(amts)% complete")
         }
     }
 }
 
+//Methods
+
+struct City {
+    var census: Int
+    
+    func collectTax() -> Int {
+        return census * 1000
+    }
+}
+let newDelhi    =   City(census: 9_000_000) // reads total population in a city
+newDelhi.collectTax()
