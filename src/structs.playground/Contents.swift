@@ -74,3 +74,10 @@ var person = Person(name: "Donald")
 person.makeAnonymous()
 
 
+//Properties and methods of strings
+
+let string = "Do or do NOT, there's no TRY."
+print(string.count)
+print(string.hasPrefix("Do"))
+print(string.uppercased())
+print(string.sorted())
