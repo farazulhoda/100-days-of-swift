@@ -59,3 +59,18 @@ struct City {
 }
 let newDelhi    =   City(census: 9_000_000) // reads total population in a city
 newDelhi.collectTax()
+
+
+//MutatingMethods
+struct Person   {
+    var name: String
+    
+    mutating func makeAnonymous()   {
+        name    =   "Anonymous"
+    }
+}
+
+var person = Person(name: "Donald")
+person.makeAnonymous()
+
+
